@@ -7,6 +7,7 @@ import { PublicLayout } from '../layout/PublicLayout';
 import { AboutPage } from '../pages/About/AboutPage';
 import { AcademicsPage } from '../pages/Academics/AcademicsPage';
 import { AdmissionsPage } from '../pages/Admissions/AdmissionsPage';
+import { SchoolLifePage } from '../pages/SchoolLife/schoolLifePage';
 
 export const AppRoutes: React.FC = () => {
     return (
@@ -16,6 +17,7 @@ export const AppRoutes: React.FC = () => {
                 <Route path={ROUTES.ABOUT} element={<AboutPage />} />
                 <Route path={ROUTES.ACADEMICS} element={<AcademicsPage />} />
                 <Route path={ROUTES.ADMISSIONS} element={<AdmissionsPage />} />
+                <Route path={ROUTES.SCHOOL_LIFE} element={<SchoolLifePage />} />
                 {/* Catch-all 404 Route */}
                 <Route path="*" element={<NotFoundPage />} />
             </Route>
