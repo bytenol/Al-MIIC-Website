@@ -1,13 +1,42 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>al-miic-website</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Al-Mawrid Islamic International College (Al-MIIC)</title>
+	<meta name="description"
+		content="Nurturing academic excellence, Islamic values, character, and purposeful leadership." 
+	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+	<script>
+		(function () {
+			try {
+				var storageKey = 'almiic-theme';
+				var savedTheme = localStorage.getItem(storageKey);
+				var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				var resolved =
+					savedTheme === 'dark' ||
+						(savedTheme !== 'light' && systemDark)
+						? 'dark'
+						: 'light';
+				document.documentElement.classList.remove('light', 'dark');
+				document.documentElement.classList.add(resolved);
+				document.documentElement.setAttribute('data-theme', resolved);
+			} catch (e) { }
+		})();
+	</script>
+</head>
+
+<body
+	class="bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] antialiased selection:bg-sky-300 selection:text-slate-950 transition-colors duration-200">
+	<div id="root"></div>
+	<script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
