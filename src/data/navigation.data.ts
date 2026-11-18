@@ -7,7 +7,7 @@ export const MAIN_NAVIGATION: NavItem[] = [
         href: ROUTES.HOME,
     },
     {
-        label: 'About Us',
+        label: 'About',
         href: ROUTES.ABOUT,
         children: [
             { label: 'Overview', href: `${ROUTES.ABOUT}#overview` },
@@ -23,7 +23,6 @@ export const MAIN_NAVIGATION: NavItem[] = [
         href: ROUTES.ACADEMICS,
         children: [
             { label: 'Academic Overview', href: `${ROUTES.ACADEMICS}#overview` },
-            { label: 'Nursery & Primary', href: `${ROUTES.ACADEMICS}#nursery-primary` },
             { label: 'Junior Secondary (JSS)', href: `${ROUTES.ACADEMICS}#junior-secondary` },
             { label: 'Senior Secondary (SSS)', href: `${ROUTES.ACADEMICS}#senior-secondary` },
             { label: 'Islamic & Qur’anic Studies', href: `${ROUTES.ACADEMICS}#islamic-studies` },

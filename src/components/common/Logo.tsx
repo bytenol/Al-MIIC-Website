@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ROUTES } from '../../routes/paths';
 import { SITE_CONFIG } from '../../config/site.config';
@@ -9,7 +8,7 @@ export interface LogoProps {
     className?: string;
 }
 
-export const Logo: React.FC<LogoProps> = ({ variant = 'default', className }) => {
+export const Logo = ({ variant = 'default', className }: LogoProps) => {
     const isFooter = variant === 'footer';
 
     return (
@@ -23,16 +22,15 @@ export const Logo: React.FC<LogoProps> = ({ variant = 'default', className }) =>
         >
             {/* Emblem Badge with bottom gold/sky accent curve matching reference s1-s10 */}
             <div className="relative shrink-0">
-                <div
+                <img src="./logo/school.jpg" 
                     className={cn(
                         'w-11 h-11 rounded-xl flex items-center justify-center font-heading font-extrabold text-sm tracking-tight transition-transform duration-200 group-hover:scale-[1.03]',
                         isFooter
                             ? 'bg-[#0B6AA2] text-white'
                             : 'bg-[#0B6AA2] text-white shadow-sm'
                     )}
-                >
-                    AM
-                </div>
+                />
+                
                 {/* Signature bottom gold accent bar under the badge */}
                 <span
                     className="absolute -bottom-1 left-1 right-1 h-1.5 rounded-b-lg bg-[var(--color-brand-gold)]"
@@ -50,7 +48,7 @@ export const Logo: React.FC<LogoProps> = ({ variant = 'default', className }) =>
                             : 'text-[var(--color-text-primary)]'
                     )}
                 >
-                    Al-Mawrid College
+                    Al-Mawrid Islamic International College (AL-MIIC)
                 </span>
                 <span
                     className={cn(

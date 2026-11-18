@@ -1,4 +1,5 @@
 import { ROUTES } from '../routes/paths';
+
 import type {
     AcademicPathway,
     DifferencePillar,
@@ -26,21 +27,23 @@ export const HERO_DATA = {
         'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1920&q=80',
 } as const;
 
+
 export const WELCOME_DATA = {
     eyebrow: 'WELCOME TO AL-MIIC',
     title: 'An education grounded in knowledge, character and purpose.',
     leadParagraph:
         'We believe excellent outcomes begin with a deep understanding of each child. Our classrooms balance strong Nigerian and international learning standards with authentic Islamic values, curiosity, creativity and care.',
     secondParagraph:
-        'From Nursery through Senior Secondary, learners are guided to think independently, communicate clearly and contribute meaningfully to their communities.',
+        'From Junior Secondary through Senior Secondary, learners are guided to think independently, communicate clearly and contribute meaningfully to their communities.',
     ctaLabel: 'Meet our learning community',
     ctaHref: ROUTES.ABOUT,
-    badgeNumber: '18',
+    badgeNumber: (new Date().getFullYear() - 2013).toString(),
     badgeText: 'years of purposeful education',
     imageUrl:
         'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80',
     imageAlt: 'Students actively participating in an Al-MIIC classroom',
 } as const;
+
 
 export const DIFFERENCE_DATA = {
     eyebrow: 'THE AL-MIIC DIFFERENCE',
@@ -83,19 +86,6 @@ export const PATHWAYS_DATA = {
     eyebrow: 'ONE SCHOOL, EVERY STAGE',
     title: 'A clear pathway from first discoveries to future ambitions.',
     stages: [
-        {
-            id: 'nursery-primary',
-            ageRange: 'AGES 3–11',
-            stageRange: 'NURSERY 1 TO PRIMARY 6',
-            title: 'Nursery & Primary',
-            description:
-                'Foundational literacy, numeracy, Qur’anic recitation, and joyful inquiry in a nurturing environment.',
-            imageUrl:
-                'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80',
-            imageAlt: 'Primary school pupil writing attentively at her desk',
-            href: `${ROUTES.ACADEMICS}#nursery-primary`,
-            staggered: false,
-        },
         {
             id: 'junior-secondary',
             ageRange: 'AGES 11–14',
@@ -203,6 +193,7 @@ export const NEWS_DATA = {
     ] satisfies NewsArticlePreview[],
 } as const;
 
+
 export const EVENTS_TESTIMONIAL_DATA = {
     eyebrow: 'SAVE THE DATE',
     title: 'Upcoming events',
@@ -236,7 +227,7 @@ export const EVENTS_TESTIMONIAL_DATA = {
         },
     ] satisfies UpcomingEventItem[],
 
-    
+
     testimonials: [
         {
             id: 'parent-primary-5',
