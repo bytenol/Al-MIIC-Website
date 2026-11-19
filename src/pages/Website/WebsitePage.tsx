@@ -9,7 +9,7 @@ import { PathwaysSection } from './sections/PathwaySection';
 
 
 
-export default function HomePage(){
+export default function WebsitePage(){
     return (
         <>
             <HeroSection />
