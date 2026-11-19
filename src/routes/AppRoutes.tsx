@@ -17,15 +17,12 @@ const AcademicsPage = lazy(() =>
 const AdmissionsPage = lazy(() =>
     import('../pages/Admissions/AdmissionsPage').then((m) => ({ default: m.AdmissionsPage }))
 );
-
 const SchoolLifePage = lazy(() =>
     import('../pages/SchoolLife/SchoolLifePage').then((m) => ({ default: m.SchoolLifePage }))
 );
-
 const NewsEventsPage = lazy(() =>
     import('../pages/NewsEvents/NewsEventsPage').then((m) => ({ default: m.NewsEventsPage }))
 );
-
 const GalleryPage = lazy(() =>
     import('../pages/Gallery/GalleryPage').then((m) => ({ default: m.GalleryPage }))
 );
@@ -89,7 +86,6 @@ const ROUTE_SEO_META: Record<string, { title: string; description: string }> = {
         description: `Website terms and conditions for ${SITE_CONFIG.name}.`,
     },
 };
-
 
 const RouteSeoManager = () => {
     const { pathname } = useLocation();
