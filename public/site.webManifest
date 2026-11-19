@@ -1,0 +1,19 @@
+{
+    "name": "Al-Mawrid Islamic International College (Al-MIIC)",
+    "short_name": "Al-MIIC",
+    "icons": [
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/logo/school.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ],
+    "theme_color": "#0A2540",
+    "background_color": "#FFFFFF",
+    "display": "standalone"
+}

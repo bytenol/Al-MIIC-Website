@@ -4,13 +4,50 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Primary Title & Description -->
 	<title>Al-Mawrid Islamic International College (Al-MIIC)</title>
 	<meta name="description"
-		content="Nurturing academic excellence, Islamic values, character, and purposeful leadership." 
-	/>
+		content="Official public website of Al-Mawrid Islamic International College (Al-MIIC) — Junior and Senior Secondary education grounded in knowledge, Islamic character and purpose." />
+	<meta name="keywords"
+		content="Al-Mawrid Islamic International College, Al-MIIC, Islamic Secondary School Nigeria, Junior Secondary, Senior Secondary, Qur'an and Science School" />
+	<meta name="author" content="Al-Mawrid Islamic International College" />
+	<meta name="robots" content="index, follow" />
+
+	<!-- Browser Tab Logo (Favicons & Apple Touch Icon) -->
+	<link rel="icon" type="image/svg+xml" href="/logo/school.svg" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+
+	<!-- Mobile Browser Address Bar Theme Colors (Light & Dark Mode) -->
+	<meta name="theme-color" content="#0A2540" media="(prefers-color-scheme: light)" />
+	<meta name="theme-color" content="#06182C" media="(prefers-color-scheme: dark)" />
+
+	<!-- Open Graph / WhatsApp / Facebook Link Preview -->
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Al-Mawrid Islamic International College" />
+	<meta property="og:title" content="Al-Mawrid Islamic International College (Al-MIIC)" />
+	<meta property="og:description"
+		content="Nurturing academic excellence, Islamic values, character, and purposeful leadership across Junior and Senior Secondary." />
+	<meta property="og:image" content="/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<!-- Twitter / X Card Preview -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Al-Mawrid Islamic International College (Al-MIIC)" />
+	<meta name="twitter:description"
+		content="Nurturing academic excellence, Islamic values, character, and purposeful leadership." />
+	<meta name="twitter:image" content="/og-image.png" />
+
+	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+		rel="stylesheet" />
+
+	<!-- Pre-Hydration Theme Script (Prevents Flash of Unstyled Theme) -->
 	<script>
 		(function () {
 			try {
@@ -18,8 +55,7 @@
 				var savedTheme = localStorage.getItem(storageKey);
 				var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 				var resolved =
-					savedTheme === 'dark' ||
-						(savedTheme !== 'light' && systemDark)
+					savedTheme === 'dark' || (savedTheme !== 'light' && systemDark)
 						? 'dark'
 						: 'light';
 				document.documentElement.classList.remove('light', 'dark');
@@ -31,7 +67,7 @@
 </head>
 
 <body
-	class="bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] antialiased selection:bg-sky-300 selection:text-slate-950 transition-colors duration-200">
+	class="bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] font-sans antialiased selection:bg-[var(--color-brand-sky)] selection:text-slate-950 transition-colors duration-200">
 	<div id="root"></div>
 	<script type="module" src="/src/main.tsx"></script>
 </body>
