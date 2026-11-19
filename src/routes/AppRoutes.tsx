@@ -14,6 +14,7 @@ import { ContactPage } from '../pages/Contact/ContactPage';
 import { LegalPage } from '../pages/Legal/LegalPage';
 import { NotFoundPage } from '../pages/NotFound/NotFoundPage';
 import WebsitePage from '../pages/Website/WebsitePage';
+import SchoolLifePage from '../pages/SchoolLifePage/SchoolLifePage';
 
 
 // // Lazy-load secondary pages to keep initial bundle fast
@@ -120,7 +121,7 @@ export const AppRoutes = () => {
                         <Route path={ROUTES.ABOUT} element={<AboutPage />} />
                         <Route path={ROUTES.ACADEMICS} element={<AcademicsPage />} />
                         <Route path={ROUTES.ADMISSIONS} element={<AdmissionsPage />} />
-                        {/* <Route path={ROUTES.SCHOOL_LIFE} element={<SchoolLifePage />} /> */}
+                        <Route path={ROUTES.SCHOOL_LIFE} element={<SchoolLifePage />} />
                         <Route path={ROUTES.NEWS_EVENTS} element={<NewsEventsPage />} />
                         <Route path={ROUTES.GALLERY} element={<GalleryPage />} />
                         <Route path={ROUTES.CONTACT} element={<ContactPage />} />
