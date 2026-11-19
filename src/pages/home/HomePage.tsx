@@ -1,4 +1,3 @@
-import React from 'react';
 import { HeroSection } from './sections/HeroSection';
 import { WelcomeSection } from './sections/WelcomeSection';
 import { DifferenceSection } from './sections/DifferenceSection';
@@ -8,7 +7,9 @@ import { NewsSection } from './sections/NewsSection';
 import { EventsTestimonialSection } from './sections/EventsTestimonialSection';
 import { PathwaysSection } from './sections/PathwaySection';
 
-export const HomePage: React.FC = () => {
+
+
+export default function HomePage(){
     return (
         <>
             <HeroSection />

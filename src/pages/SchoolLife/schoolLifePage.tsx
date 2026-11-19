@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
     Building2,
     CheckCircle2,
@@ -33,7 +33,7 @@ const CLUB_CATEGORIES: ClubCategory[] = [
     'Faith & Service',
 ];
 
-export const SchoolLifePage: React.FC = () => {
+export default function SchoolLifePage() {
     const [selectedCategory, setSelectedCategory] = useState<ClubCategory>('All');
 
     const filteredClubs =

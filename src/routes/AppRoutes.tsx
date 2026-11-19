@@ -1,6 +1,5 @@
 import { Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { HomePage } from '../pages/Home/HomePage';
 import { PageLoader } from '../components/ui/PageLoader';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { SITE_CONFIG } from '../config/site.config';
@@ -9,12 +8,14 @@ import { PublicLayout } from '../layout/PublicLayout';
 import { AboutPage } from '../pages/About/AboutPage';
 import { AcademicsPage } from '../pages/Academics/AcademicsPage';
 import { AdmissionsPage } from '../pages/Admissions/AdmissionsPage';
-import { SchoolLifePage } from '../pages/SchoolLife/SchoolLifePage';
 import { NewsEventsPage } from '../pages/NewsEvents/NewsEventsPage';
 import { GalleryPage } from '../pages/Gallery/GalleryPage';
 import { ContactPage } from '../pages/Contact/ContactPage';
 import { LegalPage } from '../pages/Legal/LegalPage';
 import { NotFoundPage } from '../pages/NotFound/NotFoundPage';
+import HomePage from '../pages/Home/HomePage';
+import SchoolLifePage from '../pages/SchoolLife/SchoolLifePage';
+
 
 // // Lazy-load secondary pages to keep initial bundle fast
 // const AboutPage = lazy(() =>
@@ -44,6 +45,7 @@ import { NotFoundPage } from '../pages/NotFound/NotFoundPage';
 // const NotFoundPage = lazy(() =>
 //     import('../pages/NotFound/NotFoundPage').then((m) => ({ default: m.NotFoundPage }))
 // );
+
 
 const ROUTE_SEO_META: Record<string, { title: string; description: string }> = {
     [ROUTES.HOME]: {
