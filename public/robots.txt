@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://almawrid.com.ng/sitemap.xml

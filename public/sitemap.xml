@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
+  <url>
+    <loc>https://almawrid.com.ng/</loc>
+  </url>
+
+  <url>
+    <loc>https://almawrid.com.ng/about</loc>
+  </url>
+
+  <url>
+    <loc>https://almawrid.com.ng/admissions</loc>
+  </url>
+
+  <url>
+    <loc>https://almawrid.com.ng/academics</loc>
+  </url>
+
+  <url>
+    <loc>https://almawrid.com.ng/news-events</loc>
+  </url>
+
+  <url>
+    <loc>https://almawrid.com.ng/contact</loc>
+  </url>
+
+    <url>
+      <loc>https://portal.almawrid.com.ng</loc>
+  </url>
+
+</urlset>
