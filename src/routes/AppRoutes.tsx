@@ -1,4 +1,4 @@
-import { Suspense, lazy } from 'react';
+import { Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { HomePage } from '../pages/Home/HomePage';
 import { PageLoader } from '../components/ui/PageLoader';
@@ -6,35 +6,44 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { SITE_CONFIG } from '../config/site.config';
 import { ROUTES } from './paths';
 import { PublicLayout } from '../layout/PublicLayout';
+import { AboutPage } from '../pages/About/AboutPage';
+import { AcademicsPage } from '../pages/Academics/AcademicsPage';
+import { AdmissionsPage } from '../pages/Admissions/AdmissionsPage';
+import { SchoolLifePage } from '../pages/SchoolLife/SchoolLifePage';
+import { NewsEventsPage } from '../pages/NewsEvents/NewsEventsPage';
+import { GalleryPage } from '../pages/Gallery/GalleryPage';
+import { ContactPage } from '../pages/Contact/ContactPage';
+import { LegalPage } from '../pages/Legal/LegalPage';
+import { NotFoundPage } from '../pages/NotFound/NotFoundPage';
 
-// Lazy-load secondary pages to keep initial bundle fast
-const AboutPage = lazy(() =>
-    import('../pages/About/AboutPage').then((m) => ({ default: m.AboutPage }))
-);
-const AcademicsPage = lazy(() =>
-    import('../pages/Academics/AcademicsPage').then((m) => ({ default: m.AcademicsPage }))
-);
-const AdmissionsPage = lazy(() =>
-    import('../pages/Admissions/AdmissionsPage').then((m) => ({ default: m.AdmissionsPage }))
-);
-const SchoolLifePage = lazy(() =>
-    import('../pages/SchoolLife/SchoolLifePage').then((m) => ({ default: m.SchoolLifePage }))
-);
-const NewsEventsPage = lazy(() =>
-    import('../pages/NewsEvents/NewsEventsPage').then((m) => ({ default: m.NewsEventsPage }))
-);
-const GalleryPage = lazy(() =>
-    import('../pages/Gallery/GalleryPage').then((m) => ({ default: m.GalleryPage }))
-);
-const ContactPage = lazy(() =>
-    import('../pages/Contact/ContactPage').then((m) => ({ default: m.ContactPage }))
-);
-const LegalPage = lazy(() =>
-    import('../pages/Legal/LegalPage').then((m) => ({ default: m.LegalPage }))
-);
-const NotFoundPage = lazy(() =>
-    import('../pages/NotFound/NotFoundPage').then((m) => ({ default: m.NotFoundPage }))
-);
+// // Lazy-load secondary pages to keep initial bundle fast
+// const AboutPage = lazy(() =>
+//     import('../pages/About/AboutPage').then((m) => ({ default: m.AboutPage }))
+// );
+// const AcademicsPage = lazy(() =>
+//     import('../pages/Academics/AcademicsPage').then((m) => ({ default: m.AcademicsPage }))
+// );
+// const AdmissionsPage = lazy(() =>
+//     import('../pages/Admissions/AdmissionsPage').then((m) => ({ default: m.AdmissionsPage }))
+// );
+// const SchoolLifePage = lazy(() =>
+//     import('../pages/SchoolLife/SchoolLifePage').then((m) => ({ default: m.SchoolLifePage }))
+// );
+// const NewsEventsPage = lazy(() =>
+//     import('../pages/NewsEvents/NewsEventsPage').then((m) => ({ default: m.NewsEventsPage }))
+// );
+// const GalleryPage = lazy(() =>
+//     import('../pages/Gallery/GalleryPage').then((m) => ({ default: m.GalleryPage }))
+// );
+// const ContactPage = lazy(() =>
+//     import('../pages/Contact/ContactPage').then((m) => ({ default: m.ContactPage }))
+// );
+// const LegalPage = lazy(() =>
+//     import('../pages/Legal/LegalPage').then((m) => ({ default: m.LegalPage }))
+// );
+// const NotFoundPage = lazy(() =>
+//     import('../pages/NotFound/NotFoundPage').then((m) => ({ default: m.NotFoundPage }))
+// );
 
 const ROUTE_SEO_META: Record<string, { title: string; description: string }> = {
     [ROUTES.HOME]: {
