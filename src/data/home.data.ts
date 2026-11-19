@@ -9,22 +9,44 @@ import type {
     UpcomingEventItem,
 } from '../types/home.types';
 
+
+
 export const HERO_DATA = {
-    eyebrow: 'LEARNING THAT SHAPES A LIFETIME',
-    headlinePrefix: 'Where bright minds grow into',
-    headlineHighlight: 'bold futures.',
-    description:
-        'A rigorous, caring Nigerian Islamic school where every learner is known, challenged and inspired to lead with character.',
-    primaryCta: {
-        label: 'Begin an application',
-        href: ROUTES.ADMISSIONS,
+  arabicMotto: 'رَبِّ زِدْنِي عِلْمًا • عِلْمٌ وَأَخْلَاقٌ وَرِسَالَةٌ',
+  arabicTranslation: '“My Lord, increase me in knowledge” — Knowledge, Character & Purpose',
+  eyebrow: 'LEARNING THAT SHAPES A LIFETIME',
+  headlinePrefix: 'Where bright minds grow into',
+  headlineHighlight: 'bold futures.',
+  description:
+    'A rigorous, caring Islamic international secondary school where every learner is known, challenged and inspired to lead with character.',
+  primaryCta: {
+    label: 'Begin an application',
+    href: ROUTES.ADMISSIONS,
+  },
+  secondaryCta: {
+    label: 'Discover Al-MIIC',
+    href: ROUTES.ABOUT,
+  },
+  backgroundImage:
+    './images/deleshittu.jpg',
+  backgroundImages: [
+    {
+      src: './images/deleshittu.jpg',
+      alt: 'Students awarded by the Dele Shittu Foundation.',
     },
-    secondaryCta: {
-        label: 'Discover Al-MIIC',
-        href: ROUTES.ABOUT,
+    {
+      src: './images/interdebate1.jpg',
+      alt: 'Senior secondary students getting awarded at inter school debate',
     },
-    backgroundImage:
-        'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1920&q=80',
+    {
+      src: './images/interdebate2.jpg',
+      alt: 'Senior secondary students getting awarded at inter school debate',
+    },
+    {
+      src: './images/assembly.jpg',
+      alt: 'Students at the assembly ground',
+    },
+  ],
 } as const;
 
 
@@ -39,9 +61,8 @@ export const WELCOME_DATA = {
     ctaHref: ROUTES.ABOUT,
     badgeNumber: (new Date().getFullYear() - 2013).toString(),
     badgeText: 'years of purposeful education',
-    imageUrl:
-        'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Students actively participating in an Al-MIIC classroom',
+    imageUrl: './facilities/al_mawrid.jpeg',
+    imageAlt: 'Al-MIIC Front Picture',
 } as const;
 
 
@@ -88,27 +109,25 @@ export const PATHWAYS_DATA = {
     stages: [
         {
             id: 'junior-secondary',
-            ageRange: 'AGES 11–14',
+            ageRange: 'AGES up to 9 years',
             stageRange: 'JSS1 TO JSS3',
             title: 'Junior Secondary',
             description:
                 'Broad academic exploration across sciences, humanities, Arabic, and technology to build strong study habits.',
-            imageUrl:
-                'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=900&q=80',
+            imageUrl: './images/junior student in tech1.jpg',
             imageAlt: 'Junior secondary students collaborating in uniform',
             href: `${ROUTES.ACADEMICS}#junior-secondary`,
             staggered: true,
         },
         {
             id: 'senior-secondary',
-            ageRange: 'AGES 14–17',
+            ageRange: 'AGES up to 12 years',
             stageRange: 'SS1 TO SS3',
             title: 'Senior Secondary',
             description:
                 'Focused preparation for WAEC, NECO, JAMB, and global university admissions with purposeful mentorship.',
-            imageUrl:
-                'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80',
-            imageAlt: 'Senior secondary students studying in the college library',
+            imageUrl: './images/senior students with computer.jpg',
+            imageAlt: 'Senior secondary students studying in the college computer lab',
             href: `${ROUTES.ACADEMICS}#senior-secondary`,
             staggered: false,
         },
@@ -116,10 +135,10 @@ export const PATHWAYS_DATA = {
 } as const;
 
 export const METRICS_DATA: SchoolMetric[] = [
-    { value: '18+', label: 'Years of educational care' },
-    { value: '620', label: 'Students across the school' },
+    { value: `${(new Date().getFullYear() - 2013).toString()}+`, label: 'Years of educational care' },
+    { value: '2120', label: 'Students across the school' },
     { value: '74', label: 'Qualified educators' },
-    { value: '24', label: 'Clubs and enrichment options' },
+    { value: '3', label: 'Clubs and enrichment options' },
 ];
 
 export const FACILITIES_DATA = {
@@ -136,8 +155,8 @@ export const FACILITIES_DATA = {
     ctaLabel: 'Explore our facilities',
     ctaHref: `${ROUTES.SCHOOL_LIFE}#facilities`,
     primaryImage: {
-        url: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80',
-        alt: 'Students raising hands enthusiastically in class',
+        url: './images/Student_holding_academic_folder.jpg',
+        alt: 'Students holding academic folder',
     },
     secondaryImage: {
         url: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=700&q=80',

@@ -1,133 +1,172 @@
 @import "tailwindcss";
 
 @layer base {
-  :root,
-  .light {
-    /* Typography Families */
-    --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
-    /* Official Al-MIIC Brand Palette (LightSkyBlue + Deep Navy + Warm Gold) */
-    --color-brand-sky: #87cefa;           /* Official Uniform LightSkyBlue */
-    --color-brand-sky-soft: #e6f4fe;      /* Soft sky tint for badges/surfaces */
-    --color-brand-sky-Mid: #38bdf8;       /* Vibrant sky accent */
-    --color-brand-primary: #0b6aa2;       /* Accessible interactive blue (Buttons, Links, Eyebrows) */
-    --color-brand-primary-hover: #085584; /* Deepened interactive hover */
-    --color-brand-section-blue: #085a8c;  /* Rich blue for Upcoming Events section (s8.png) */
+	:root,
+	.light {
+		/* Typography Families */
+		--font-heading: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+		--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
-    /* Deep Institutional Navy */
-    --color-brand-navy: #0a2540;          /* Primary dark navy (Headings, Metrics strip) */
-    --color-brand-navy-deep: #06182c;     /* TopBar & Footer deep navy */
+		/* Official Al-MIIC Brand Palette (LightSkyBlue + Deep Navy + Warm Gold) */
+		--color-brand-sky: #87cefa;
+		/* Official Uniform LightSkyBlue */
+		--color-brand-sky-soft: #e6f4fe;
+		/* Soft sky tint for badges/surfaces */
+		--color-brand-sky-Mid: #38bdf8;
+		/* Vibrant sky accent */
+		--color-brand-primary: #0b6aa2;
+		/* Accessible interactive blue (Buttons, Links, Eyebrows) */
+		--color-brand-primary-hover: #085584;
+		/* Deepened interactive hover */
+		--color-brand-section-blue: #085a8c;
+		/* Rich blue for Upcoming Events section (s8.png) */
 
-    /* Complementary Warm Gold Accent (from screenshot reference) */
-    --color-brand-gold: #f2b82e;          /* Primary gold button, 18 badge, CTA banner */
-    --color-brand-gold-hover: #e0a61b;    /* Gold hover state */
-    --color-brand-gold-soft: #fef7e0;     /* Subtle gold tint */
+		/* Deep Institutional Navy */
+		--color-brand-navy: #0a2540;
+		/* Primary dark navy (Headings, Metrics strip) */
+		--color-brand-navy-deep: #06182c;
+		/* TopBar & Footer deep navy */
 
-    /* Background & Surface Tokens */
-    --color-bg-primary: #ffffff;          /* Main page background (Uniform White) */
-    --color-bg-secondary: #f2f8fd;        /* LightSkyBlue-tinted section background (s3, s6, s7) */
-    --color-bg-elevated: #ffffff;         /* Cards, dropdowns, sticky navbar */
-    --color-bg-inverse: #0a2540;          /* Dark navy sections */
+		/* Complementary Warm Gold Accent (from screenshot reference) */
+		--color-brand-gold: #f2b82e;
+		/* Primary gold button, 18 badge, CTA banner */
+		--color-brand-gold-hover: #e0a61b;
+		/* Gold hover state */
+		--color-brand-gold-soft: #fef7e0;
+		/* Subtle gold tint */
 
-    /* Text & Contrast Tokens */
-    --color-text-primary: #0a2540;        /* Strong dark navy headings */
-    --color-text-secondary: #334e68;      /* Comfortable body text slate-navy */
-    --color-text-muted: #627d98;          /* Meta dates, captions, numbers (01-04) */
-    --color-text-eyebrow: #0b6aa2;        /* Section overline text on light surfaces */
-    --color-text-inverse: #ffffff;        /* Crisp white text on dark surfaces */
+		/* Background & Surface Tokens */
+		--color-bg-primary: #ffffff;
+		/* Main page background (Uniform White) */
+		--color-bg-secondary: #f2f8fd;
+		/* LightSkyBlue-tinted section background (s3, s6, s7) */
+		--color-bg-elevated: #ffffff;
+		/* Cards, dropdowns, sticky navbar */
+		--color-bg-inverse: #0a2540;
+		/* Dark navy sections */
 
-    /* Borders & Dividers */
-    --color-border-subtle: #ddeaf6;       /* Grid dividers (s3.png) & card borders */
-    --color-border-strong: #b6d8f2;       /* Emphasized sky border */
+		/* Text & Contrast Tokens */
+		--color-text-primary: #0a2540;
+		/* Strong dark navy headings */
+		--color-text-secondary: #334e68;
+		/* Comfortable body text slate-navy */
+		--color-text-muted: #627d98;
+		/* Meta dates, captions, numbers (01-04) */
+		--color-text-eyebrow: #0b6aa2;
+		/* Section overline text on light surfaces */
+		--color-text-inverse: #ffffff;
+		/* Crisp white text on dark surfaces */
 
-    /* Shadows */
-    --shadow-navbar: 0 4px 20px -2px rgba(10, 37, 64, 0.06);
-    --shadow-card: 0 10px 30px -5px rgba(10, 37, 64, 0.05);
-    --shadow-dropdown: 0 16px 36px -6px rgba(10, 37, 64, 0.12);
-  }
+		/* Borders & Dividers */
+		--color-border-subtle: #ddeaf6;
+		/* Grid dividers (s3.png) & card borders */
+		--color-border-strong: #b6d8f2;
+		/* Emphasized sky border */
 
-  .dark {
-    --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+		/* Shadows */
+		--shadow-navbar: 0 4px 20px -2px rgba(10, 37, 64, 0.06);
+		--shadow-card: 0 10px 30px -5px rgba(10, 37, 64, 0.05);
+		--shadow-dropdown: 0 16px 36px -6px rgba(10, 37, 64, 0.12);
+	}
 
-    /* Brand Palette adapted for Dark Mode readability */
-    --color-brand-sky: #87cefa;
-    --color-brand-sky-soft: #102a45;
-    --color-brand-sky-Mid: #38bdf8;
-    --color-brand-primary: #38bdf8;
-    --color-brand-primary-hover: #7dd3fc;
-    --color-brand-section-blue: #0c3b5e;
+	.dark {
+		--font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+		--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
-    --color-brand-navy: #0f2942;
-    --color-brand-navy-deep: #05101d;
+		/* Brand Palette adapted for Dark Mode readability */
+		--color-brand-sky: #87cefa;
+		--color-brand-sky-soft: #102a45;
+		--color-brand-sky-Mid: #38bdf8;
+		--color-brand-primary: #38bdf8;
+		--color-brand-primary-hover: #7dd3fc;
+		--color-brand-section-blue: #0c3b5e;
 
-    --color-brand-gold: #f2b82e;
-    --color-brand-gold-hover: #f7c64e;
-    --color-brand-gold-soft: #2b2312;
+		--color-brand-navy: #0f2942;
+		--color-brand-navy-deep: #05101d;
 
-    /* Dark Surfaces */
-    --color-bg-primary: #071526;
-    --color-bg-secondary: #0b1f36;
-    --color-bg-elevated: #102a46;
-    --color-bg-inverse: #040d18;
+		--color-brand-gold: #f2b82e;
+		--color-brand-gold-hover: #f7c64e;
+		--color-brand-gold-soft: #2b2312;
 
-    /* Dark Mode Typography */
-    --color-text-primary: #f0f8ff;
-    --color-text-secondary: #cbd5e1;
-    --color-text-muted: #8ca3ba;
-    --color-text-eyebrow: #87cefa;
-    --color-text-inverse: #ffffff;
+		/* Dark Surfaces */
+		--color-bg-primary: #071526;
+		--color-bg-secondary: #0b1f36;
+		--color-bg-elevated: #102a46;
+		--color-bg-inverse: #040d18;
 
-    /* Dark Mode Borders */
-    --color-border-subtle: #1b395b;
-    --color-border-strong: #2b5482;
+		/* Dark Mode Typography */
+		--color-text-primary: #f0f8ff;
+		--color-text-secondary: #cbd5e1;
+		--color-text-muted: #8ca3ba;
+		--color-text-eyebrow: #87cefa;
+		--color-text-inverse: #ffffff;
 
-    --shadow-navbar: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
-    --shadow-card: 0 10px 30px -5px rgba(0, 0, 0, 0.35);
-    --shadow-dropdown: 0 16px 36px -6px rgba(0, 0, 0, 0.5);
-  }
+		/* Dark Mode Borders */
+		--color-border-subtle: #1b395b;
+		--color-border-strong: #2b5482;
 
-  html {
-    font-family: var(--font-sans);
-  }
+		--shadow-navbar: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+		--shadow-card: 0 10px 30px -5px rgba(0, 0, 0, 0.35);
+		--shadow-dropdown: 0 16px 36px -6px rgba(0, 0, 0, 0.5);
+	}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-    letter-spacing: -0.02em;
-  }
+	html {
+		font-family: var(--font-sans);
+	}
 
-  body {
-    background-color: var(--color-bg-primary);
-    color: var(--color-text-primary);
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-heading);
+		letter-spacing: -0.02em;
+	}
+
+	body {
+		background-color: var(--color-bg-primary);
+		color: var(--color-text-primary);
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
 }
 
 /* Signature visual treatments from the reference screenshots */
 @layer utilities {
-  .font-heading {
-    font-family: var(--font-heading);
-  }
+	.font-heading {
+		font-family: var(--font-heading);
+	}
 
-  .font-sans {
-    font-family: var(--font-sans);
-  }
+	.font-sans {
+		font-family: var(--font-sans);
+	}
 
-  /* Asymmetric top-right arch used on images and testimonial card (s2, s4, s6, s8) */
-  .rounded-signature {
-    border-top-left-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
-    border-bottom-right-radius: 0.75rem;
-    border-top-right-radius: 3.5rem;
-  }
+	/* Asymmetric top-right arch used on images and testimonial card (s2, s4, s6, s8) */
+	.rounded-signature {
+		border-top-left-radius: 0.75rem;
+		border-bottom-left-radius: 0.75rem;
+		border-bottom-right-radius: 0.75rem;
+		border-top-right-radius: 3.5rem;
+	}
 
-  .rounded-signature-lg {
-    border-top-left-radius: 0.875rem;
-    border-bottom-left-radius: 0.875rem;
-    border-bottom-right-radius: 0.875rem;
-    border-top-right-radius: 4.5rem;
-  }
+	.rounded-signature-lg {
+		border-top-left-radius: 0.875rem;
+		border-bottom-left-radius: 0.875rem;
+		border-bottom-right-radius: 0.875rem;
+		border-top-right-radius: 4.5rem;
+	}
+
+}
+
+
+
+.roboto-thin {
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
 }

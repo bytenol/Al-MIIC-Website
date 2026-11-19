@@ -1,14 +1,14 @@
 export const SITE_CONFIG = {
     name: 'Al-Mawrid Islamic International College',
     shortName: 'Al-MIIC',
-    tagline: 'Knowledge. Character. Purpose.',
+    tagline: 'Knowledge and Faith',
     admissionsBannerText: 'Admissions for 2026/27 academic session are now open',
     contact: {
         phone: '+234 800 000 0000',
         admissionsPhone: '+234 800 000 0001',
         email: 'info@almiic.edu.ng',
         admissionsEmail: 'admissions@almiic.edu.ng',
-        address: 'Al-Mawrid Campus, Nigeria',
+        address: 'Umaru Audi Road, beside Unilorin Staff Quarters, 240102, Ilorin, Kwara State, Nigeria',
         officeHours: [
             { days: 'Monday – Thursday', hours: '8:00 AM – 4:00 PM' },
             { days: 'Friday', hours: '8:00 AM – 1:00 PM (Jumu’ah Break)' },
