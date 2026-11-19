@@ -13,8 +13,6 @@ import { GalleryPage } from '../pages/Gallery/GalleryPage';
 import { ContactPage } from '../pages/Contact/ContactPage';
 import { LegalPage } from '../pages/Legal/LegalPage';
 import { NotFoundPage } from '../pages/NotFound/NotFoundPage';
-import HomePage from '../pages/Home/HomePage';
-import SchoolLifePage from '../pages/SchoolLife/SchoolLifePage';
 
 
 // // Lazy-load secondary pages to keep initial bundle fast
@@ -117,11 +115,11 @@ export const AppRoutes = () => {
             <Suspense fallback={<PageLoader />}>
                 <Routes>
                     <Route element={<PublicLayout />}>
-                        <Route path={ROUTES.HOME} element={<HomePage />} />
+                        {/* <Route path={ROUTES.HOME} element={<HomePage />} /> */}
                         <Route path={ROUTES.ABOUT} element={<AboutPage />} />
                         <Route path={ROUTES.ACADEMICS} element={<AcademicsPage />} />
                         <Route path={ROUTES.ADMISSIONS} element={<AdmissionsPage />} />
-                        <Route path={ROUTES.SCHOOL_LIFE} element={<SchoolLifePage />} />
+                        {/* <Route path={ROUTES.SCHOOL_LIFE} element={<SchoolLifePage />} /> */}
                         <Route path={ROUTES.NEWS_EVENTS} element={<NewsEventsPage />} />
                         <Route path={ROUTES.GALLERY} element={<GalleryPage />} />
                         <Route path={ROUTES.CONTACT} element={<ContactPage />} />
