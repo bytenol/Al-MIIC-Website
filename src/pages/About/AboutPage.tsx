@@ -1,4 +1,3 @@
-import React from 'react';
 import { BookOpen, Compass, Heart, Shield, Star } from 'lucide-react';
 import { Container } from '../../components/common/Container';
 import { SectionHeading } from '../../components/common/SectionHeading';
@@ -17,6 +16,7 @@ import {
 import { ROUTES } from '../../routes/paths';
 import type { CoreValue } from '../../types/about.types';
 
+
 const ICON_MAP: Record<CoreValue['iconName'], React.ReactNode> = {
     star: <Star className="w-6 h-6 stroke-[1.75]" />,
     book: <BookOpen className="w-6 h-6 stroke-[1.75]" />,
@@ -25,7 +25,8 @@ const ICON_MAP: Record<CoreValue['iconName'], React.ReactNode> = {
     compass: <Compass className="w-6 h-6 stroke-[1.75]" />,
 };
 
-export const AboutPage: React.FC = () => {
+
+export const AboutPage = () => {
     return (
         <div className="space-y-24 pb-20">
             {/* 1. About Hero Section */}

@@ -15,6 +15,7 @@ export const ABOUT_HERO = {
     bannerAlt: 'Al-MIIC campus grounds and students',
 } as const;
 
+
 export const OVERVIEW_DATA = {
     eyebrow: 'INSTITUTIONAL OVERVIEW',
     heading: 'A sanctuary of academic distinction and moral uprightness.',
@@ -23,7 +24,7 @@ export const OVERVIEW_DATA = {
     paragraph2:
         'Our curriculum seamlessly integrates national and international educational standards with comprehensive Qur’anic and Arabic studies, ensuring every learner develops both the competence to excel in modern sciences and technology and the moral compass to lead with integrity.',
     stats: [
-        { value: '18+', label: 'Years of Excellence' },
+        { value: (new Date().getFullYear() - 2013).toString() + "+", label: 'Years of Excellence' },
         { value: '100%', label: 'Moral & Academic Focus' },
         { value: '1:12', label: 'Educator-to-Student Ratio' },
     ],
@@ -31,7 +32,7 @@ export const OVERVIEW_DATA = {
 
 export const HISTORY_MILESTONES: HistoryMilestone[] = [
     {
-        year: '2008',
+        year: '2013',
         title: 'Foundation of Al-Mawrid',
         description:
             'Established as a modest Islamic nursery and primary school with a vision to bridge modern academic excellence with foundational Islamic moral training.',
@@ -43,7 +44,7 @@ export const HISTORY_MILESTONES: HistoryMilestone[] = [
             'In response to community demand and academic success, the college expanded its campus facilities to introduce Junior Secondary classes (JSS 1–3) with specialized science laboratories.',
     },
     {
-        year: '2019',
+        year: '2014',
         title: 'Senior Secondary & WAEC Accreditation',
         description:
             'Full accreditation granted for Senior Secondary programs (SS 1–3), empowering students with advanced STEM, humanities, and Islamic jurisprudence tracks.',
@@ -108,31 +109,28 @@ export const CORE_VALUES: CoreValue[] = [
 
 export const LEADERSHIP_TEAM: LeadershipMember[] = [
     {
-        id: 'principal',
-        name: 'Dr. Ibrahim Al-Mubarak',
-        role: 'Principal & Executive Director',
-        bio: 'With over two decades of experience in educational leadership and Islamic scholarship, Dr. Al-Mubarak guides the strategic academic direction of Al-MIIC.',
-        image:
-            'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80',
-        imageAlt: 'Dr. Ibrahim Al-Mubarak, Principal',
+        id: 'proprietor',
+        name: 'Hon. Justice, Idris Haroon',
+        role: 'Rtd. Grand Kadi, Proprietor',
+        bio: 'With decades of experience in educational leadership and Islamic scholarship, Justice Idris Haroon guides the strategic academic direction of Al-MIIC.',
+        image:'./images/proprietor.jpg',
+        imageAlt: 'Hon. Justice Idris Haroon, Proprietor',
     },
     {
         id: 'dean-academics',
-        name: 'Malimah Zainab Olatunji',
-        role: 'Dean of Academic Affairs',
+        name: 'Mrs. R.O Nurudeen',
+        role: 'Principal',
         bio: 'Overseeing curriculum design, teacher professional development, and examination standards across Nursery, Primary, and Secondary sections.',
-        image:
-            'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
-        imageAlt: 'Malimah Zainab Olatunji, Dean of Academic Affairs',
+        image:'',
+        imageAlt: 'Mrs. R.O Nurudeen, Principal',
     },
     {
         id: 'dean-student-affairs',
-        name: 'Ustadh Luqman Bello',
-        role: 'Dean of Student Life & Islamic Guidance',
+        name: 'Ustadh Ridwan Mustapha',
+        role: 'Chief Imam & Islamic Guidance',
         bio: 'Dedicated to pastoral mentorship, spiritual development, student leadership councils, and character cultivation.',
-        image:
-            'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80',
-        imageAlt: 'Ustadh Luqman Bello, Dean of Student Life',
+        image:'',
+        imageAlt: 'Ustadh Ridwan Mustapha, Chief Imam & Islamic Guidance',
     },
 ];
 
