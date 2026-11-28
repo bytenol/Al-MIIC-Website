@@ -31,6 +31,10 @@ export const HERO_DATA = {
     './images/deleshittu.jpg',
   backgroundImages: [
     {
+      src: './images/senior students with computer.jpg',
+      alt: 'Students awarded by the Dele Shittu Foundation.',
+    },
+    {
       src: './images/deleshittu.jpg',
       alt: 'Students awarded by the Dele Shittu Foundation.',
     },
@@ -42,6 +46,10 @@ export const HERO_DATA = {
       src: './images/interdebate2.jpg',
       alt: 'Senior secondary students getting awarded at inter school debate',
     },
+    {
+      src: './images/junior student in tech1.jpg',
+      alt: 'Students awarded by the Dele Shittu Foundation.',
+    },  
     {
       src: './images/assembly.jpg',
       alt: 'Students at the assembly ground',
@@ -114,7 +122,7 @@ export const PATHWAYS_DATA = {
             title: 'Junior Secondary',
             description:
                 'Broad academic exploration across sciences, humanities, Arabic, and technology to build strong study habits.',
-            imageUrl: './images/junior student in tech1.jpg',
+            imageUrl: './facilities/computer_lab.jpg',
             imageAlt: 'Junior secondary students collaborating in uniform',
             href: `${ROUTES.ACADEMICS}#junior-secondary`,
             staggered: true,
@@ -126,7 +134,7 @@ export const PATHWAYS_DATA = {
             title: 'Senior Secondary',
             description:
                 'Focused preparation for WAEC, NECO, JAMB, and global university admissions with purposeful mentorship.',
-            imageUrl: './images/senior students with computer.jpg',
+            imageUrl: './facilities/chem_lab.jpg',
             imageAlt: 'Senior secondary students studying in the college computer lab',
             href: `${ROUTES.ACADEMICS}#senior-secondary`,
             staggered: false,

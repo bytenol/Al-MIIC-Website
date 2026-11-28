@@ -3,10 +3,6 @@ import type { NavItem } from '../types/navigation.types';
 
 export const MAIN_NAVIGATION: NavItem[] = [
     {
-        label: 'Home',
-        href: ROUTES.HOME,
-    },
-    {
         label: 'About',
         href: ROUTES.ABOUT,
         children: [

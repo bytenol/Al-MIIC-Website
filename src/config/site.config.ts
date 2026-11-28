@@ -4,11 +4,11 @@ export const SITE_CONFIG = {
     tagline: 'Knowledge and Faith',
     admissionsBannerText: 'Admissions for 2026/27 academic session are now open',
     contact: {
-        phone: '+234 81 57979290 | +234 80 337 9730',
-        admissionsPhone: '+234 81 57979290',
+        phone: '+234 8157979290 | +234 8107494694',
+        admissionsPhone: '+234 8157979290',
         email: 'almawrid2013@gmail.com',
         admissionsEmail: 'almawrid2013@gmail.com',
-        address: 'Umaru Audi Road, beside Unilorin Staff Quarters, 240102, Ilorin, Kwara State, Nigeria',
+        address: 'Umar Audi Road, beside Unilorin Staff Quarters, 240102, Ilorin, Kwara State, Nigeria',
         officeHours: [
             { days: 'Monday – Thursday', hours: '8:00 AM – 5:00 PM' },
             { days: 'Friday', hours: '8:00 AM – 1:00 PM (Jumu’ah Break)' },
